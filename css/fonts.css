@@ -1,0 +1,70 @@
+
+
+@font-face {
+  font-family: 'ALS Schlange sans';
+  src: url('ALSSchlangesans.eot');
+  src: local('ALS Schlange sans'), local('ALSSchlangesans'),
+      url('ALSSchlangesans.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'ALS Schlange sans';
+  src: url('ALSSchlangesans-Bold.eot');
+  src: local('ALS Schlange sans'), local('ALSSchlangesans'),
+      url('ALSSchlangesans-Bold.woff2') format('woff2');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'ALS Schlange sans';
+  src: url('ALSSchlangesans-Italic.eot');
+  src: local('ALS Schlange sans'), local('ALSSchlangesans'),
+      url('ALSSchlangesans-Black.woff2') format('woff2');
+  font-weight: normal;
+  font-style: italic;
+}
+
+
+
+@font-face {
+  font-family: 'GothamSSm Bold';
+  src: url(./fonts/gothamxnarrssm_bold.otf);
+}
+
+@font-face {
+  font-family: 'GothamSSm Medium';
+  src: url(./fonts/gothamxnarrssm_medium.otf);
+}
+
+@font-face {
+  font-family: 'Montserrat Medium';
+  src: url(./fonts/Montserrat-Medium.ttf);
+}
+
+@font-face {
+  font-family: 'Montserrat Bold';
+  src: url(./fonts/Montserrat-Bold.ttf);
+}
+
+@font-face {
+  font-family: 'Montserrat ExtraBold';
+  src: url(./fonts/Montserrat-ExtraBold.ttf);
+}
+
+@font-face {
+  font-family: 'Font Awesome 5 Free Solid';
+  src: url(./fonts/FontAwesome5FreeSolid.woff2);
+}
+
+@font-face {
+  font-family: 'Font Awesome 5 Free Regular';
+  src: url(./fonts/FontAwesome5FreeRegular.woff2);
+}
+
+@font-face {
+  font-family: 'HelveticaNeueCyr Roman';
+  src: url(./fonts/helveticaneuecyr-12.woff2);
+}
