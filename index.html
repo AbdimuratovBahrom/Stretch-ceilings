@@ -8,12 +8,19 @@
   <link rel="shortcut icon" href="./css/images/Rectangle 13.png" type="image/x-icon">
   <link rel="stylesheet" href="./css/style.css">
   <link rel="stylesheet" href="./css/fonts/">
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ion
+  icons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <link rel="stylesheet" href="./style.css" />
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <link rel="stylesheet" href="./app.css" />
+
 
 </head>
 
 <body>
   <div class="header">
-    
+
     <div class="logo">
       <img src="./css/images/logo.png" alt="">
     </div>
@@ -22,8 +29,12 @@
     </div>
 
     <div class="meter__delivery">
-      <div class="meter"><p>Бесплатный замер</p></div>
-      <div class="delivery"><p>Выезжаем <span>в день обращения</span></p></div>
+      <div class="meter">
+        <p>Бесплатный замер</p>
+      </div>
+      <div class="delivery">
+        <p>Выезжаем <span>в день обращения</span></p>
+      </div>
     </div>
 
     <div class="installment__payment">
@@ -39,30 +50,32 @@
     <div class="feedback">
 
       <div class="call"><a href="tel:+7917122288">+7 (917) 122-28-80</a></div>
-     <div class="whatapp">
-      <a href="#!">или <span>закажите звонок</span></a>
-      <a href="#!"><img src="./css/images/whatsapp.png" alt=""></a>
-     </div>
+      <div class="whatapp">
+        <a href="#!">или <span>закажите звонок</span></a>
+        <a href="#!"><img src="./css/images/whatsapp.png" alt=""></a>
+      </div>
 
     </div>
-     
+
 
     <div class="burger__button">
 
-    <div class="burger" id="burger">
-      <div></div>
-      <div></div>
-      <div></div>
-      
+      <div class="burger" id="burger">
+        <div></div>
+        <div></div>
+        <div></div>
+
+      </div>
+      <div class="menu__btn">
+        <p>Меню</p>
+      </div>
     </div>
-    <div class="menu__btn"><p>Меню</p></div>
+
   </div>
 
-</div>
 
- 
   <div class="navbar">
-    
+
     <div class="menu1">
       <a href="#">натяжные потолки</a>
       <a href="#">материалы</a>
@@ -83,42 +96,46 @@
 
   </div>
 
-   
+
   <div class="calculator2">
     <a href="#!"><img src="./css/images/culculator.png" alt=""></a>
     <a target="_blank" href="./css/calculator.html">КАЛЬКУЛЯТОР <span>НАТЯЖНЫХ ПОТОЛКОВ</span></a>
   </div>
-<div class="bg__fone">
-  <div class="container">
-    <div class="bg__big">
-      <div class="bg__h1p">
-        <h1>ДВУХУРОВНЕВЫЕ <span>НАТЯЖНЫЕ ПОТОЛКИ</span></h1>
-        <p>В МОСКВЕ от ФАБРИКИ производителя</p>
-      </div>
-      <div class="bg__price">
-        <h3>290 ₽/м <span>2</span></h3>
-        <p>материал + установка. Оплачивайте после монтажа!</p>
-      </div>
-      <div class="bg__p">
-        <p>
-          Позволяют создать нужную форму. Они подходят для любых помещений, так как позволяют визуально расширить пространство или сделать комнату визуально больше.
-        </p>
-      </div>
-      <div class="bg__list">
-        <div class="bg__list-line">
-          <img src="./css/images/check_mark.png" alt=""> <p>зрительное разделение пространства</p>
+  <div class="bg__fone">
+    <div class="container">
+      <div class="bg__big">
+        <div class="bg__h1p">
+          <h1>ДВУХУРОВНЕВЫЕ <span>НАТЯЖНЫЕ ПОТОЛКИ</span></h1>
+          <p>В МОСКВЕ от ФАБРИКИ производителя</p>
         </div>
-
-        <div class="bg__list-line">
-          <img src="./css/images/check_mark.png" alt=""> <p>индивидуальный дизайн</p>
+        <div class="bg__price">
+          <h3>290 ₽/м <span>2</span></h3>
+          <p>материал + установка. Оплачивайте после монтажа!</p>
         </div>
+        <div class="bg__p">
+          <p>
+            Позволяют создать нужную форму. Они подходят для любых помещений, так как позволяют визуально расширить
+            пространство или сделать комнату визуально больше.
+          </p>
+        </div>
+        <div class="bg__list">
+          <div class="bg__list-line">
+            <img src="./css/images/check_mark.png" alt="">
+            <p>зрительное разделение пространства</p>
+          </div>
 
           <div class="bg__list-line">
-            <img src="./css/images/check_mark.png" alt=""> <p>можно проложить декоративную подсветку</p>
+            <img src="./css/images/check_mark.png" alt="">
+            <p>индивидуальный дизайн</p>
           </div>
-            
 
-      </div>
+          <div class="bg__list-line">
+            <img src="./css/images/check_mark.png" alt="">
+            <p>можно проложить декоративную подсветку</p>
+          </div>
+
+
+        </div>
       </div>
 
       <div class="bg__discount">
@@ -126,607 +143,763 @@
         <p>СНИЖЕНИЕ ЦЕН <span>УСПЕЙ ДО 30.07</span></p>
       </div>
 
-      
 
-      
+
+
       <div class="modal" id="my-modal">
         <div class="modal__box">
           <!-- <button class="my-close-btn" id="close-my-modal-btn"> -->
-            <!-- <p>X</p> -->
+          <!-- <p>X</p> -->
           </button>
 
 
 
 
+
+
+
           <div class="calculator__buttons">
-           
-    
-            <button class="btn2" id="open-modal2-btn2"> <div class="calculator__img"><img src="./css/images/culculator2.png" alt=""></div> <div class="calculator__btn-p"><p>Получить точный расчёт и сравнить цены</p></div>
 
-            </button>
+
+            <button class="btn2" id="open-modal2-btn2">
+              <div class="calculator__img"><img src="./css/images/culculator2.png" alt=""></div>
+              <div class="calculator__btn-p">
+                <p>Получить точный расчёт и сравнить цены</p>
+              </div>
+
+
           </div>
         </div>
       </div>
+    </div>
   </div>
-</div>
 
 
 
 
-<div class="modal2" id="my-modal2">
-  
-  <div class="modal2__box">
-    
+  <div class="modal2" id="my-modal2">
 
-  
+    <div class="modal2__box">
 
-    <div class="calc">
 
-      <button class="them-btn dark-theme" id="dark-btn" type="button"><img src="./css/images/dark.png" alt=""><img src="./css/images/light.png" alt="">
-        <button class="my-close2-btn2" id="close2-my-modal2-btn2">
-          <p>X</p>
+
+
+      <div class="calc">
+
+        <button class="them-btn dark-theme" id="dark-btn" type="button"><img src="./css/images/dark.png" alt=""><img
+            src="./css/images/light.png" alt="">
+          <button class="my-close2-btn2" id="close2-my-modal2-btn2">
+            <p>X</p>
+          </button>
+
+
         </button>
-        
-       
-      </button>
-  
-    
-  
-      <div class="calc__screen">
-        <span class="calc__values" id="values"></span>
-        <span class="calc__result" id="calc-result">=
-          <span id="result">0</span>
-        </span>
-      </div>
-  
-      <div class="calc__buttons buttons">
-  
-        <div class="buttons__left">
-  
-          <div class="btn btn--default-color ac" id="clear">Ac</div>
-  
-          <div class="btn btn--default-color erase" id="backspace">
-  
-            <svg width="22" height="18">
-              <path
-                d="M6.5353 1.11994e-08H21.0003C21.2655 1.11994e-08 21.5199 0.105357 21.7074 0.292893C21.8949 0.48043 22.0003 0.734784 22.0003 1V17C22.0003 17.2652 21.8949 17.5196 21.7074 17.7071C21.5199 17.8946 21.2655 18 21.0003 18H6.5353C6.37071 18 6.20865 17.9594 6.06352 17.8818C5.91838 17.8042 5.79465 17.6919 5.7033 17.555L0.370298 9.555C0.260659 9.39067 0.202148 9.19755 0.202148 9C0.202148 8.80245 0.260659 8.60933 0.370298 8.445L5.7033 0.445C5.79465 0.308084 5.91838 0.195832 6.06352 0.118205C6.20865 0.0405779 6.37071 -2.46193e-05 6.5353 1.11994e-08ZM7.0703 2L2.4043 9L7.0703 16H20.0003V2H7.0703ZM13.0003 7.586L15.8283 4.757L17.2433 6.172L14.4143 9L17.2433 11.828L15.8283 13.243L13.0003 10.414L10.1723 13.243L8.7573 11.828L11.5863 9L8.7573 6.172L10.1723 4.757L13.0003 7.586Z" />
-            </svg>
-  
-          </div>
-  
-          <div class="btn btn--bg-blue-200 division" id="/">
-  
-            <svg width="12" height="27">
-              <path d="M12 0L3.47781 27H0L8.52219 0H12Z" />
-            </svg>
-  
-          </div>
-  
-          <div class="btn seven" id="7">7</div>
-          <div class="btn eigth" id="8">8</div>
-          <div class="btn nine" id="9">9</div>
-  
-          <div class="btn four" id="4">4</div>
-          <div class="btn five" id="5">5</div>
-          <div class="btn six" id="6">6</div>
-  
-          <div class="btn one" id="1">1</div>
-          <div class="btn two" id="2">2</div>
-          <div class="btn three" id="3">3</div>
-  
-          <div class="buttons__inner">
-  
-            <div class="btn zero" id="0">0</div>
-            <div class="btn dot" id=".">.</div>
-  
-          </div>
-  
+
+
+
+        <div class="calc__screen">
+          <span class="calc__values" id="values"></span>
+          <span class="calc__result" id="calc-result">=
+            <span id="result">0</span>
+          </span>
         </div>
-  
-        <div class="buttons__right">
-  
-          <div class="btn btn--bg-blue-200 multiply" id="*">
-            <svg width="12" height="12">
-              <path
-                d="M10.5561 1.81915L12 4.37234L7.60428 6L12 7.59575L10.5241 10.2447L6.86631 7.34043L7.57219 12H4.58824L5.22995 7.34043L1.54011 10.3085L0 7.59575L4.36364 5.96809L0.0320855 4.37234L1.47594 1.78724L5.22995 4.65957L4.55615 0H7.57219L6.86631 4.65957L10.5561 1.81915Z" />
-            </svg>
+
+        <div class="calc__buttons buttons">
+
+          <div class="buttons__left">
+
+            <div class="btn btn--default-color ac" id="clear">Ac</div>
+
+            <div class="btn btn--default-color erase" id="backspace">
+
+              <svg width="22" height="18">
+                <path
+                  d="M6.5353 1.11994e-08H21.0003C21.2655 1.11994e-08 21.5199 0.105357 21.7074 0.292893C21.8949 0.48043 22.0003 0.734784 22.0003 1V17C22.0003 17.2652 21.8949 17.5196 21.7074 17.7071C21.5199 17.8946 21.2655 18 21.0003 18H6.5353C6.37071 18 6.20865 17.9594 6.06352 17.8818C5.91838 17.8042 5.79465 17.6919 5.7033 17.555L0.370298 9.555C0.260659 9.39067 0.202148 9.19755 0.202148 9C0.202148 8.80245 0.260659 8.60933 0.370298 8.445L5.7033 0.445C5.79465 0.308084 5.91838 0.195832 6.06352 0.118205C6.20865 0.0405779 6.37071 -2.46193e-05 6.5353 1.11994e-08ZM7.0703 2L2.4043 9L7.0703 16H20.0003V2H7.0703ZM13.0003 7.586L15.8283 4.757L17.2433 6.172L14.4143 9L17.2433 11.828L15.8283 13.243L13.0003 10.414L10.1723 13.243L8.7573 11.828L11.5863 9L8.7573 6.172L10.1723 4.757L13.0003 7.586Z" />
+              </svg>
+
+            </div>
+
+            <div class="btn btn--bg-blue-200 division" id="/">
+
+              <svg width="12" height="27">
+                <path d="M12 0L3.47781 27H0L8.52219 0H12Z" />
+              </svg>
+
+            </div>
+
+            <div class="btn seven" id="7">7</div>
+            <div class="btn eigth" id="8">8</div>
+            <div class="btn nine" id="9">9</div>
+
+            <div class="btn four" id="4">4</div>
+            <div class="btn five" id="5">5</div>
+            <div class="btn six" id="6">6</div>
+
+            <div class="btn one" id="1">1</div>
+            <div class="btn two" id="2">2</div>
+            <div class="btn three" id="3">3</div>
+
+            <div class="buttons__inner">
+
+              <div class="btn zero" id="0">0</div>
+              <div class="btn dot" id=".">.</div>
+
+            </div>
+
           </div>
-  
-          <div class="btn btn--bg-blue-200 minus" id="-">-</div>
-          <div class="btn btn--bg-blue-200 plus" id="+">+</div>
-          <div class="btn equal" id="equal">=</div>
-  
+
+          <div class="buttons__right">
+
+            <div class="btn btn--bg-blue-200 multiply" id="*">
+              <svg width="12" height="12">
+                <path
+                  d="M10.5561 1.81915L12 4.37234L7.60428 6L12 7.59575L10.5241 10.2447L6.86631 7.34043L7.57219 12H4.58824L5.22995 7.34043L1.54011 10.3085L0 7.59575L4.36364 5.96809L0.0320855 4.37234L1.47594 1.78724L5.22995 4.65957L4.55615 0H7.57219L6.86631 4.65957L10.5561 1.81915Z" />
+              </svg>
+            </div>
+
+            <div class="btn btn--bg-blue-200 minus" id="-">-</div>
+            <div class="btn btn--bg-blue-200 plus" id="+">+</div>
+            <div class="btn equal" id="equal">=</div>
+
+          </div>
+
         </div>
-  
+
       </div>
-  
+
+
+
+
+
     </div>
-
-
-
-
 
   </div>
 
-</div>
 
 
 
 
 
+  <div class="example__bg">
 
-<div class="example__bg">
 
-  
 
-    
 
-      <div class="example__h1">
-        <h1>ПРИМЕРЫ УСТАНОВЛЕННЫХ ПОТОЛКОВ</h1>
-      </div>
-      <div class="example__p">
-        <p>Натяжные потолки "Фабричные потолки" с фото и ценой (материал + установка)</p>
-      </div>
 
-      <div class="example__ex">
-    
-    <div class="example__block">
-    
-
-    <div class="example__card">
-      <div class="example__photos">
-        <div class="example__box">
-        <div class="ex__big-photo">
-          <img src="./css/images/image 3.png" alt="">
-        </div>
-        <div class="ex__small-photo">
-
-          
-            <img src="./css/images/image 4.png" alt="">
-            <img src="./css/images/image 5.png" alt="">
-            <img src="./css/images/image 6.png" alt="">
-
-        </div>
-        <div class="ex__small-photo">
-            
-            <img src="./css/images/image 7.png" alt="">
-            <img src="./css/images/image 10.png" alt="">
-            <video src="./css/images/example.mp4" videoWidth="156" videoHeight="87" poster="./css/images/image 8.png" controls >
-           
-
-        </div>
-        
-        </div>
-        
-
+    <div class="example__h1">
+      <h1>ПРИМЕРЫ УСТАНОВЛЕННЫХ ПОТОЛКОВ</h1>
+    </div>
+    <div class="example__p">
+      <p>Натяжные потолки "Фабричные потолки" с фото и ценой (материал + установка)</p>
     </div>
 
+    <div class="example__ex">
 
-    </div>
+      <div class="example__block">
 
-    <div class="example__textbox">
-    
 
-      <div class="ex__text-h4">
-        <h4>Монтаж потолка в детской 14 м2 с использованием 
-          пленки VIPCEILING серии MONLANGE S9020 (3.80)</h4>
-        
-      </div>
-      <div class="ex__text-cost">
-        <div class="ex__cost">
-          <h2>12 209 <span>₽</span></h2>
-          <p>Итоговая стоимость</p>
+        <div class="example__card">
+          <div class="example__photos">
+            <div class="example__box">
+              <div class="ex__big-photo">
+                <img src="./css/images/image 3.png" alt="">
+              </div>
+              <div class="ex__small-photo">
+
+
+                <img src="./css/images/image 4.png" alt="">
+                <img src="./css/images/image 5.png" alt="">
+                <img src="./css/images/image 6.png" alt="">
+
+              </div>
+              <div class="ex__small-photo">
+
+                <img src="./css/images/image 7.png" alt="">
+                <img src="./css/images/image 10.png" alt="">
+                <video src="./css/images/example.mp4" videoWidth="156" videoHeight="87"
+                  poster="./css/images/image 8.png" controls>
+
+
+              </div>
+
+            </div>
+
+
+          </div>
+
+
         </div>
-        <div class="ex__data">
-          <p>05.09.2020</p>
-        </div>
-      </div>
 
-      <div class="ex__list-case">
-        <p>улица Некрасова, 11А</p>
-      </div>
-        <div class="ex__list">
-        
+        <div class="example__textbox">
 
-          <div class="ex__p1">
-            <p>Изготовление и окантовка отверстия <br>
-              Платформа для люстры 200 мм  <br>
-              Платформа для светильника 55-124 мм  <br>
-              Монтаж люстры без сборки (Класс 2)  <br>
-              Установка встраиваемого светильника  <br>
-              Обработка угла  <br>
-              Профиль стеновой невидимый ПВХ  <br>
+
+          <div class="ex__text-h4">
+            <h4>Монтаж потолка в детской 14 м2 с использованием
+              пленки VIPCEILING серии MONLANGE S9020 (3.80)</h4>
+
+          </div>
+          <div class="ex__text-cost">
+            <div class="ex__cost">
+              <h2>12 209 <span>₽</span></h2>
+              <p>Итоговая стоимость</p>
+            </div>
+            <div class="ex__data">
+              <p>05.09.2020</p>
+            </div>
+          </div>
+
+          <div class="ex__list-case">
+            <p>улица Некрасова, 11А</p>
+          </div>
+          <div class="ex__list">
+
+
+            <div class="ex__p1">
+              <p>Изготовление и окантовка отверстия <br>
+                Платформа для люстры 200 мм <br>
+                Платформа для светильника 55-124 мм <br>
+                Монтаж люстры без сборки (Класс 2) <br>
+                Установка встраиваемого светильника <br>
+                Обработка угла <br>
+                Профиль стеновой невидимый ПВХ <br>
               </p>
-          
-          </div>
-          <div class="ex__p2">
-            <p>7 шт  <br>
-              1 шт  <br>
-              6 шт  <br>
-              1 шт  <br>
-              6 шт  <br>
-              4 шт  <br>
-              15.5 м  <br>
+
+            </div>
+            <div class="ex__p2">
+              <p>7 шт <br>
+                1 шт <br>
+                6 шт <br>
+                1 шт <br>
+                6 шт <br>
+                4 шт <br>
+                15.5 м <br>
               </p>
+            </div>
+          </div>
+
+          <div class="ex__link"><a href="#!">Показать полный список</a></div>
+
+        </div>
+
+      </div>
+
+
+    </div>
+
+
+
+    <div class="example__ex">
+
+      <div class="example__block">
+
+
+        <div class="example__card">
+          <div class="example__photos">
+            <div class="example__box">
+              <div class="ex__big-photo">
+                <img src="./css/images/image 3.png" alt="">
+              </div>
+              <div class="ex__small-photo">
+
+
+                <img src="./css/images/image 4.png" alt="">
+                <img src="./css/images/image 5.png" alt="">
+                <img src="./css/images/image 6.png" alt="">
+
+              </div>
+              <div class="ex__small-photo">
+
+                <img src="./css/images/image 7.png" alt="">
+                <img src="./css/images/image 10.png" alt="">
+                <video src="./css/images/example.mp4" videoWidth="156" videoHeight="87"
+                  poster="./css/images/image 8.png" controls>
+
+
+              </div>
+
+            </div>
+
+
+          </div>
+
+
+        </div>
+
+        <div class="example__textbox">
+
+
+          <div class="ex__text-h4">
+            <h4>Монтаж потолка в детской 14 м2 с использованием
+              пленки VIPCEILING серии MONLANGE S9020 (3.80)</h4>
+
+          </div>
+          <div class="ex__text-cost">
+            <div class="ex__cost">
+              <h2>12 209 <span>₽</span></h2>
+              <p>Итоговая стоимость</p>
+            </div>
+            <div class="ex__data">
+              <p>05.09.2020</p>
+            </div>
+          </div>
+
+          <div class="ex__list-case">
+            <p>улица Некрасова, 11А</p>
+          </div>
+          <div class="ex__list">
+
+
+            <div class="ex__p1">
+              <p>Изготовление и окантовка отверстия <br>
+                Платформа для люстры 200 мм <br>
+                Платформа для светильника 55-124 мм <br>
+                Монтаж люстры без сборки (Класс 2) <br>
+                Установка встраиваемого светильника <br>
+                Обработка угла <br>
+                Профиль стеновой невидимый ПВХ <br>
+              </p>
+
+            </div>
+            <div class="ex__p2">
+              <p>7 шт <br>
+                1 шт <br>
+                6 шт <br>
+                1 шт <br>
+                6 шт <br>
+                4 шт <br>
+                15.5 м <br>
+              </p>
+            </div>
+          </div>
+
+          <div class="ex__link"><a href="#!">Показать полный список</a></div>
+
+        </div>
+
+      </div>
+
+
+    </div>
+
+
+    <div class="example__ex">
+
+      <div class="example__block">
+
+
+        <div class="example__card">
+          <div class="example__photos">
+            <div class="example__box">
+              <div class="ex__big-photo">
+                <img src="./css/images/image 3.png" alt="">
+              </div>
+              <div class="ex__small-photo">
+
+
+                <img src="./css/images/image 4.png" alt="">
+                <img src="./css/images/image 5.png" alt="">
+                <img src="./css/images/image 6.png" alt="">
+
+              </div>
+              <div class="ex__small-photo">
+
+                <img src="./css/images/image 7.png" alt="">
+                <img src="./css/images/image 10.png" alt="">
+                <video src="./css/images/example.mp4" videoWidth="156" videoHeight="87"
+                  poster="./css/images/image 8.png" controls>
+
+
+              </div>
+
+            </div>
+
+
+          </div>
+
+
+        </div>
+
+        <div class="example__textbox">
+
+
+          <div class="ex__text-h4">
+            <h4>Монтаж потолка в детской 14 м2 с использованием
+              пленки VIPCEILING серии MONLANGE S9020 (3.80)</h4>
+
+          </div>
+          <div class="ex__text-cost">
+            <div class="ex__cost">
+              <h2>12 209 <span>₽</span></h2>
+              <p>Итоговая стоимость</p>
+            </div>
+            <div class="ex__data">
+              <p>05.09.2020</p>
+            </div>
+          </div>
+
+          <div class="ex__list-case">
+            <p>улица Некрасова, 11А</p>
+          </div>
+          <div class="ex__list">
+
+
+            <div class="ex__p1">
+              <p>Изготовление и окантовка отверстия <br>
+                Платформа для люстры 200 мм <br>
+                Платформа для светильника 55-124 мм <br>
+                Монтаж люстры без сборки (Класс 2) <br>
+                Установка встраиваемого светильника <br>
+                Обработка угла <br>
+                Профиль стеновой невидимый ПВХ <br>
+              </p>
+
+            </div>
+            <div class="ex__p2">
+              <p>7 шт <br>
+                1 шт <br>
+                6 шт <br>
+                1 шт <br>
+                6 шт <br>
+                4 шт <br>
+                15.5 м <br>
+              </p>
+            </div>
+          </div>
+
+          <div class="ex__link"><a href="#!">Показать полный список</a></div>
+
+        </div>
+
+      </div>
+
+
+    </div>
+
+
+    <div class="example__ex">
+
+      <div class="example__block">
+
+
+        <div class="example__card">
+          <div class="example__photos">
+            <div class="example__box">
+              <div class="ex__big-photo">
+                <img src="./css/images/image 3.png" alt="">
+              </div>
+              <div class="ex__small-photo">
+
+
+                <img src="./css/images/image 4.png" alt="">
+                <img src="./css/images/image 5.png" alt="">
+                <img src="./css/images/image 6.png" alt="">
+
+              </div>
+              <div class="ex__small-photo">
+
+                <img src="./css/images/image 7.png" alt="">
+                <img src="./css/images/image 10.png" alt="">
+                <video src="./css/images/example.mp4" videoWidth="156" videoHeight="87"
+                  poster="./css/images/image 8.png" controls>
+
+
+              </div>
+
+            </div>
+
+
+          </div>
+
+
+        </div>
+
+        <div class="example__textbox">
+
+
+          <div class="ex__text-h4">
+            <h4>Монтаж потолка в детской 14 м2 с использованием
+              пленки VIPCEILING серии MONLANGE S9020 (3.80)</h4>
+
+          </div>
+          <div class="ex__text-cost">
+            <div class="ex__cost">
+              <h2>12 209 <span>₽</span></h2>
+              <p>Итоговая стоимость</p>
+            </div>
+            <div class="ex__data">
+              <p>05.09.2020</p>
+            </div>
+          </div>
+
+          <div class="ex__list-case">
+            <p>улица Некрасова, 11А</p>
+          </div>
+          <div class="ex__list">
+
+
+            <div class="ex__p1">
+              <p>Изготовление и окантовка отверстия <br>
+                Платформа для люстры 200 мм <br>
+                Платформа для светильника 55-124 мм <br>
+                Монтаж люстры без сборки (Класс 2) <br>
+                Установка встраиваемого светильника <br>
+                Обработка угла <br>
+                Профиль стеновой невидимый ПВХ <br>
+              </p>
+
+            </div>
+            <div class="ex__p2">
+              <p>7 шт <br>
+                1 шт <br>
+                6 шт <br>
+                1 шт <br>
+                6 шт <br>
+                4 шт <br>
+                15.5 м <br>
+              </p>
+            </div>
+          </div>
+
+          <div class="ex__link"><a href="#!">Показать полный список</a></div>
+
+        </div>
+
+      </div>
+
+
+    </div>
+
+    <div class="example__btn">
+      <button>ЗАГРУЗИТЬ ЕЩЕ</button>
+    </div>
+
+
+  </div>
+
+
+
+
+  <div class="discount">
+    <div class="discount__main">
+      <div class="discount__photo">
+        <div class="dis__photo-worker">
+          <img src="./css/images/worker_smile.png" alt="">
+        </div>
+        <div class="dis__pec">
+          <img src="./css/images/dis__pec.png" alt="">
+        </div>
+        <div class="discount__card">
+          <div class="dis__h3">
+            <h3>РАССРОЧКА БЕЗ БАНКА </h3>
+          </div>
+          <div class="dis__list">
+            <div class="dis__li-mark">
+              <img src="./css/images/check_mark.png" alt="">
+            </div>
+            <div class="dis__li-p">
+              <p>Первый взнос <span>50%</span></p>
+            </div>
+          </div>
+          <div class="dis__list">
+            <div class="dis__li-mark">
+              <img src="./css/images/check_mark.png" alt="">
+            </div>
+            <div class="dis__li-p">
+              <p>Переплата по рассрочке <span>0%</span></p>
+            </div>
+          </div>
+          <div class="dis__list">
+            <div class="dis__li-mark">
+              <img src="./css/images/check_mark.png" alt="">
+            </div>
+            <div class="dis__li-p">
+              <p>Сроком до <span>3 месяцев</span></p>
+            </div>
+          </div>
+          <div class="discount__btn">
+            <button>подробнее</button>
           </div>
         </div>
-      
-      <div class="ex__link"><a href="#!">Показать полный список</a></div>
-    
-  </div>
-    
+      </div>
+    </div>
   </div>
 
-  
-</div>
-
-
-
-<div class="example__ex">
-    
-  <div class="example__block">
-  
-
-  <div class="example__card">
-    <div class="example__photos">
-      <div class="example__box">
-      <div class="ex__big-photo">
-        <img src="./css/images/image 3.png" alt="">
+  <div class="maket__main">
+    <div class="maket__h4">
+      <h4>ДВУХУРОВНЕВЫЕ НАТЯЖНЫЕ ПОТОЛКИ</h4>
+    </div>
+    <div class="maket__block">
+      <div class="maket__row1">
+        <img src="./css/images/Rectangle 8.png" alt="">
+        <img src="./css/images/Rectangle 9.png" alt="">
+        <img src="./css/images/Rectangle 10.png" alt="">
       </div>
-      <div class="ex__small-photo">
 
-        
-          <img src="./css/images/image 4.png" alt="">
-          <img src="./css/images/image 5.png" alt="">
-          <img src="./css/images/image 6.png" alt="">
-
+      <div class="maket__row2">
+        <img src="./css/images/Rectangle 11.png" alt="">
+        <img src="./css/images/Rectangle 12.png" alt="">
+        <img src="./css/images/Rectangle 13.png" alt="">
       </div>
-      <div class="ex__small-photo">
-          
-          <img src="./css/images/image 7.png" alt="">
-          <img src="./css/images/image 10.png" alt="">
-          <video src="./css/images/example.mp4" videoWidth="156" videoHeight="87" poster="./css/images/image 8.png" controls >
-         
 
+      <div class="maket__row3">
+        <img src="./css/images/Rectangle 14.png" alt="">
+        <img src="./css/images/Rectangle 15.png" alt="">
+        <img src="./css/images/Rectangle 16.png" alt="">
       </div>
-      
-      </div>
-      
-
+    </div>
+    <div class="maket__btn">
+      <button>ЗАГРУЗИТЬ ЕЩЕ</button>
+    </div>
   </div>
 
 
-  </div>
-
-  <div class="example__textbox">
-  
-
-    <div class="ex__text-h4">
-      <h4>Монтаж потолка в детской 14 м2 с использованием 
-        пленки VIPCEILING серии MONLANGE S9020 (3.80)</h4>
-      
-    </div>
-    <div class="ex__text-cost">
-      <div class="ex__cost">
-        <h2>12 209 <span>₽</span></h2>
-        <p>Итоговая стоимость</p>
+  <div class="advan__block">
+    <div class="advan__box">
+      <div class="advan__h2">
+        <h2>НАШЛИ ПОТОЛКИ ДЕШЕВЛЕ?</h2>
       </div>
-      <div class="ex__data">
-        <p>05.09.2020</p>
-      </div>
-    </div>
-
-    <div class="ex__list-case">
-      <p>улица Некрасова, 11А</p>
-    </div>
-      <div class="ex__list">
-      
-
-        <div class="ex__p1">
-          <p>Изготовление и окантовка отверстия <br>
-            Платформа для люстры 200 мм  <br>
-            Платформа для светильника 55-124 мм  <br>
-            Монтаж люстры без сборки (Класс 2)  <br>
-            Установка встраиваемого светильника  <br>
-            Обработка угла  <br>
-            Профиль стеновой невидимый ПВХ  <br>
-            </p>
-        
-        </div>
-        <div class="ex__p2">
-          <p>7 шт  <br>
-            1 шт  <br>
-            6 шт  <br>
-            1 шт  <br>
-            6 шт  <br>
-            4 шт  <br>
-            15.5 м  <br>
-            </p>
-        </div>
-      </div>
-    
-    <div class="ex__link"><a href="#!">Показать полный список</a></div>
-  
-</div>
-  
-</div>
-
-
-</div>
-
-
-<div class="example__ex">
-    
-  <div class="example__block">
-  
-
-  <div class="example__card">
-    <div class="example__photos">
-      <div class="example__box">
-      <div class="ex__big-photo">
-        <img src="./css/images/image 3.png" alt="">
-      </div>
-      <div class="ex__small-photo">
-
-        
-          <img src="./css/images/image 4.png" alt="">
-          <img src="./css/images/image 5.png" alt="">
-          <img src="./css/images/image 6.png" alt="">
-
-      </div>
-      <div class="ex__small-photo">
-          
-          <img src="./css/images/image 7.png" alt="">
-          <img src="./css/images/image 10.png" alt="">
-          <video src="./css/images/example.mp4" videoWidth="156" videoHeight="87" poster="./css/images/image 8.png" controls >
-         
-
-      </div>
-      
-      </div>
-      
-
-  </div>
-
-
-  </div>
-
-  <div class="example__textbox">
-  
-
-    <div class="ex__text-h4">
-      <h4>Монтаж потолка в детской 14 м2 с использованием 
-        пленки VIPCEILING серии MONLANGE S9020 (3.80)</h4>
-      
-    </div>
-    <div class="ex__text-cost">
-      <div class="ex__cost">
-        <h2>12 209 <span>₽</span></h2>
-        <p>Итоговая стоимость</p>
-      </div>
-      <div class="ex__data">
-        <p>05.09.2020</p>
-      </div>
-    </div>
-
-    <div class="ex__list-case">
-      <p>улица Некрасова, 11А</p>
-    </div>
-      <div class="ex__list">
-      
-
-        <div class="ex__p1">
-          <p>Изготовление и окантовка отверстия <br>
-            Платформа для люстры 200 мм  <br>
-            Платформа для светильника 55-124 мм  <br>
-            Монтаж люстры без сборки (Класс 2)  <br>
-            Установка встраиваемого светильника  <br>
-            Обработка угла  <br>
-            Профиль стеновой невидимый ПВХ  <br>
-            </p>
-        
-        </div>
-        <div class="ex__p2">
-          <p>7 шт  <br>
-            1 шт  <br>
-            6 шт  <br>
-            1 шт  <br>
-            6 шт  <br>
-            4 шт  <br>
-            15.5 м  <br>
-            </p>
-        </div>
-      </div>
-    
-    <div class="ex__link"><a href="#!">Показать полный список</a></div>
-  
-</div>
-  
-</div>
-
-
-</div>
-
-
-<div class="example__ex">
-    
-  <div class="example__block">
-  
-
-  <div class="example__card">
-    <div class="example__photos">
-      <div class="example__box">
-      <div class="ex__big-photo">
-        <img src="./css/images/image 3.png" alt="">
-      </div>
-      <div class="ex__small-photo">
-
-        
-          <img src="./css/images/image 4.png" alt="">
-          <img src="./css/images/image 5.png" alt="">
-          <img src="./css/images/image 6.png" alt="">
-
-      </div>
-      <div class="ex__small-photo">
-          
-          <img src="./css/images/image 7.png" alt="">
-          <img src="./css/images/image 10.png" alt="">
-          <video src="./css/images/example.mp4" videoWidth="156" videoHeight="87" poster="./css/images/image 8.png" controls >
-         
-
-      </div>
-      
-      </div>
-      
-
-  </div>
-
-
-  </div>
-
-  <div class="example__textbox">
-  
-
-    <div class="ex__text-h4">
-      <h4>Монтаж потолка в детской 14 м2 с использованием 
-        пленки VIPCEILING серии MONLANGE S9020 (3.80)</h4>
-      
-    </div>
-    <div class="ex__text-cost">
-      <div class="ex__cost">
-        <h2>12 209 <span>₽</span></h2>
-        <p>Итоговая стоимость</p>
-      </div>
-      <div class="ex__data">
-        <p>05.09.2020</p>
-      </div>
-    </div>
-
-    <div class="ex__list-case">
-      <p>улица Некрасова, 11А</p>
-    </div>
-      <div class="ex__list">
-      
-
-        <div class="ex__p1">
-          <p>Изготовление и окантовка отверстия <br>
-            Платформа для люстры 200 мм  <br>
-            Платформа для светильника 55-124 мм  <br>
-            Монтаж люстры без сборки (Класс 2)  <br>
-            Установка встраиваемого светильника  <br>
-            Обработка угла  <br>
-            Профиль стеновой невидимый ПВХ  <br>
-            </p>
-        
-        </div>
-        <div class="ex__p2">
-          <p>7 шт  <br>
-            1 шт  <br>
-            6 шт  <br>
-            1 шт  <br>
-            6 шт  <br>
-            4 шт  <br>
-            15.5 м  <br>
-            </p>
-        </div>
-      </div>
-    
-    <div class="ex__link"><a href="#!">Показать полный список</a></div>
-  
-</div>
-  
-</div>
-
-
-</div>
-
-<div class="example__btn">
-  <button>ЗАГРУЗИТЬ ЕЩЕ</button>
-</div>
-
-
-</div>
-
-
-
-
-<div class="discount">
-  <div class="discount__main">
-    <div class="discount__photo">
-      <div class="dis__photo-worker">
-        <img src="./css/images/worker_smile.png" alt="">
-      </div>
-      <div class="dis__pec">
-        <img src="./css/images/dis__pec.png" alt="">
-      </div>
-      <div class="discount__card">
-        <div class="dis__h3">
-          <h3>РАССРОЧКА БЕЗ БАНКА </h3>   
-        </div>
-        <div class="dis__list">
-          <div class="dis__li-mark">
-            <img src="./css/images/check_mark.png" alt="">
+      <div class="advan__case">
+        <div class="advan__cop">
+          <div class="advan__cop-h4">
+            <h4>
+              Вернём
+            </h4>
           </div>
-          <div class="dis__li-p">
-            <p>Первый взнос <span>50%</span></p>
+          <div class="advan__cop-p">
+            <p>ОТ РАЗНИЦЫ</p>
           </div>
         </div>
-        <div class="dis__list">
-          <div class="dis__li-mark">
-            <img src="./css/images/check_mark.png" alt="">
-          </div>
-          <div class="dis__li-p">
-            <p>Переплата по рассрочке <span>0%</span></p>
-          </div>
+        <div class="advan__120">
+          <h1>120</h1>
         </div>
-        <div class="dis__list">
-          <div class="dis__li-mark">
-            <img src="./css/images/check_mark.png" alt="">
-          </div>
-          <div class="dis__li-p">
-            <p>Сроком до <span>3 месяцев</span></p>
-          </div>
+        <div class="advan__120">
+          <p>%</p>
         </div>
-        <div class="discount__btn">
-          <button>подробнее</button>
-        </div>
+
+
+
       </div>
-    </div> 
-  </div>
-</div>
+      <div class="advan__pp">
+        <p>Если Вы нашли цену ниже на натяжные потолки или аналогичные виды работ в другом месте, то предоставьте нам
+          смету и мы гарантируем еще более низкую цену!</p>
+      </div>
 
-<div class="maket__main">
-  <div class="maket__h4">
-    <h4>ДВУХУРОВНЕВЫЕ НАТЯЖНЫЕ ПОТОЛКИ</h4>
-  </div>
-  <div class="maket__block">
-    <div class="maket__row1">
-      <img src="./css/images/Rectangle 8.png" alt="">
-      <img src="./css/images/Rectangle 9.png" alt="">
-      <img src="./css/images/Rectangle 10.png" alt="">
+      <div class="advan__btn">
+        <a href="#!">РАССЧИТАТЬ ПО НИЗКОЙ ЦЕНЕ</a>
+      </div>
+
     </div>
 
-    <div class="maket__row2">
-      <img src="./css/images/Rectangle 11.png" alt="">
-      <img src="./css/images/Rectangle 12.png" alt="">
-      <img src="./css/images/Rectangle 13.png" alt="">
+    <div class="advan__paper">
+      <img src="./css/images/advantages.png" alt="">
     </div>
 
-    <div class="maket__row3">
-      <img src="./css/images/Rectangle 14.png" alt="">
-      <img src="./css/images/Rectangle 15.png" alt="">
-      <img src="./css/images/Rectangle 16.png" alt="">
+  </div>
+  </div>
+
+  <div class="montaj__big">
+    <div class="montaj__box">
+      <h2>
+        ОПЛАТА ПОСЛЕ МОНТАЖА
+      </h2>
+      <p>
+        Компания “Фабричные потолки” работает без предоплаты. <br>
+        Оплата заказа производится только после выполнения всех монтажных работ.
+      </p>
+      <h5>
+        Мы единственные в Москве работаем без предоплаты по договору.
+      </h5>
+      <div class="montaj__icons-case">
+        <div class="montaj__icons">
+          <img class="icon1" src="./css/images/1.png" alt="">
+          <img src="./css/images/icon1.png" alt="">
+          <p>Изготовление и
+            установка потолка</p>
+        </div>
+        <img src="./css/images/arrow.png" alt="">
+        <div class="montaj__icons">
+          <img class="icon1" src="./css/images/2.png" alt="">
+          <img src="./css/images/icon2.png" alt="">
+          <p>Подписание акта
+            о выполненных работах</p>
+        </div>
+        <img src="./css/images/arrow.png" alt="">
+        <div class="montaj__icons">
+          <img class="icon1" src="./css/images/3.png" alt="">
+          <img src="./css/images/icon3.png" alt="">
+          <p>Оплата по договору
+            картой или наличными</p>
+        </div>
+
+      </div>
+
+      <div class="montaj__button">
+        <a href="#!">узнать подробнее</a>
+      </div>
     </div>
   </div>
-  <div class="maket__btn">
-    <button>ЗАГРУЗИТЬ ЕЩЕ</button>
+
+  <div class="slider__block">
+
+    <h2>ГОРЯЧИЕ АКЦИИ</h2>
+
+
+
+
+    <div class="image-slider">
+      <div class="slider__card-box">
+        <img src="./css/images/slider1.png" class="d-block w-100" alt="...">
+        <p>Только в апреле</p>
+        <h6>МОНАЖ натяжного потолка 299 ₽/м2 <span>(материал + установка)</span></h6>
+        <a href="#!">ПОСМОТРЕТЬ ВСЕ АКЦИИ</a>
+      </div>
+      <div class="slider__card-box">
+        <img src="./css/images/slider2.png" class="d-block w-100" alt="...">
+        <p>Только в апреле</p>
+        <h6>СВЕТИЛЬНИК И ЛАМПА БЕСПЛАТНО <span>за каждые
+            3 000 ₽ в заказе</span></h6>
+        <a href="#!">ПОСМОТРЕТЬ ВСЕ АКЦИИ</a>
+      </div>
+
+
+      <div class="slider__card-box">
+        <img src="./css/images/slider3.png" class="d-block w-100" alt="...">
+        <p>Только в апреле</p>
+        <h6>Новоселам СКИДКА 15% <span>на любой натяжной потолок от суммы заказа</span></h6>
+        <a href="#!">ПОСМОТРЕТЬ ВСЕ АКЦИИ</a>
+      </div>
+      <div class="slider__card-box">
+        <img src="./css/images/slider1.png" class="d-block w-100" alt="...">
+        <p>Только в апреле</p>
+        <h6>МОНАЖ натяжного потолка 299 ₽/м2 <span>(материал + установка)</span></h6>
+        <a href="#!">ПОСМОТРЕТЬ ВСЕ АКЦИИ</a>
+      </div>
+      <div class="slider__card-box">
+        <img src="./css/images/slider2.png" class="d-block w-100" alt="...">
+        <p>Только в апреле</p>
+        <h6>СВЕТИЛЬНИК И ЛАМПА БЕСПЛАТНО <span>за каждые
+            3 000 ₽ в заказе</span></h6>
+        <a href="#!">ПОСМОТРЕТЬ ВСЕ АКЦИИ</a>
+      </div>
+      <div class="slider__card-box">
+        <img src="./css/images/slider3.png" class="d-block w-100" alt="...">
+        <p>Только в апреле</p>
+        <h6>Новоселам СКИДКА 15% <span>на любой натяжной потолок от суммы заказа</span></h6>
+        <a href="#!">ПОСМОТРЕТЬ ВСЕ АКЦИИ</a>
+      </div>
+    </div>
   </div>
-</div>
 
 
 
+
+  <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script src="./js/slider.js"></script>
   <script src="./js/burger.js"></script>
   <script src="./js/modal2.js"></script>
+  <script src="./modal3.js"></script>
   <script src="./js/dark__light.js"></script>
 </body>
 
