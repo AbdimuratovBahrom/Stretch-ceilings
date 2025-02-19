@@ -1762,7 +1762,7 @@ blue-900: #109DFF;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
+  padding: 30px 0 80px 0;
 }
 
 .slider__block h2 {
@@ -1917,6 +1917,182 @@ blue-900: #109DFF;
   color: #fff;
   background: #f26422;
   transition: all 0.5s linear;
+}
+
+
+.price__block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url(./images/price__fone.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 30px 0px 50px 0px;
+}
+
+.price__h2 h2 {
+  font-family: var(--font-family);
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 125%;
+  text-align: center;
+  color: #000;
+  max-width: 920px;
+}
+
+.price__mult {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.price__mult p {
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 122%;
+  text-align: right;
+  color: #000;
+}
+
+.price__mult span {
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 122%;
+  text-align: center;
+  color: #d0d0d0;
+  border-radius: 5px;
+  width: 80px;
+  height: 40px;
+  background: #fff;
+}
+
+.line {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  bottom: 20%;
+  left: 20px;
+
+}
+
+.price__mult h6 {
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 121%;
+  color: #000;
+  position: relative;
+}
+
+.price__mult h4 {
+  font-family: var(--font-family);
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 125%;
+  text-align: center;
+  color: #f26422;
+}
+
+.price__mult a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-family);
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+  border-radius: 6px;
+  width: 335px;
+  height: 40px;
+  background: #f26422;
+  text-decoration: none;
+
+}
+
+.price__mult a:hover {
+  background: #fff;
+  color: #f26422;
+  transition: all linear 0.5s;
+}
+
+.price__text P {
+  position: relative;
+  bottom: 20px;
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 122%;
+  text-align: center;
+  color: #000;
+}
+
+.lamps__block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #F9F9F9;
+}
+
+.lamp__h2 h2 {
+  font-family: var(--font-family);
+  font-weight: 900;
+  font-size: 40px;
+  text-align: center;
+  color: #000;
+}
+
+.lamps__row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.lamp__card {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+
+}
+
+.lamp__card p {
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 100%;
+  color: #000;
+}
+
+.lamp__card h6 {
+  position: relative;
+  bottom: 50px;
+  font-family: var(--font-family);
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 121%;
+  color: #000;
+}
+
+.lamp__card span {
+
+  font-family: var(--font-family);
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 100%;
+  color: #000;
 }
 
 
