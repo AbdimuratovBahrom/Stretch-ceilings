@@ -2258,7 +2258,217 @@ blue-900: #109DFF;
 }
 
 
+.callback {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(./images/fone.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  padding: 50px 0;
+}
 
+.callback__block {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.callback__text {
+  padding-bottom: 40px;
+}
+
+.callback__titlal {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding: 30px;
+  width: 960px;
+  height: 416px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.25);
+  background: #fff;
+  border-radius: 6px;
+}
+
+.callback__titlal h2 {
+  font-family: var(--font-family);
+  font-weight: 800;
+  font-size: 36px;
+  line-height: 125%;
+  color: #3a3a3a;
+  position: relative;
+  bottom: 10px;
+}
+
+.callback__text p {
+  width: 380px;
+  height: 44px;
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 122%;
+  text-transform: uppercase;
+  color: #3a3a3a;
+  position: relative;
+  bottom: 10px;
+}
+
+.callback__text a {
+  font-family: var(--font-family);
+  font-weight: 800;
+  font-size: 30px;
+  line-height: 125%;
+  text-align: center;
+  color: #3a3a3a;
+  text-decoration: none;
+  position: relative;
+  bottom: 10px;
+}
+
+.callback__whatsup {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  background: #e1efd0;
+  width: 200px;
+  border-radius: 5px;
+}
+
+.callback__whatsup a {
+  width: 200px;
+  height: 16px;
+  font-family: var(--font4);
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 100%;
+  color: #243542;
+  text-decoration: none;
+  position: relative;
+  top: 3px;
+  text-align: center;
+}
+
+.callback__text a:hover {
+  color: #F26422;
+  transition: all ease-in 0.5s;
+}
+
+p.whatsapp {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 122%;
+  text-align: start;
+  color: #3a3a3a;
+  position: relative;
+  top: 30px
+}
+
+.callback__whatsup:hover {
+  background: #27de61;
+  transition: all ease-in 0.5s;
+}
+
+.callback__button {
+  position: relative;
+  top: 30px;
+}
+
+.callback__button a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-family);
+  font-weight: 800;
+  font-size: 15px;
+  line-height: 100%;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+  text-decoration: none;
+  margin-top: 25px;
+  width: 315px;
+  height: 40px;
+  border-radius: 5px;
+  background: #F26422;
+}
+
+.callback__button a:hover {
+  color: #F26422;
+  transition: all ease-in 0.5s;
+  background: #fff;
+  border: solid 1px #F26422;
+}
+
+.callback__right {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  justify-content: end;
+  margin-left: 200px;
+}
+
+.callback__right-top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  width: 380px;
+  height: 88px;
+  background: #f2f2f2;
+  position: relative;
+  bottom: 40px;
+}
+
+.callback__right-top img {
+  position: relative;
+  top: 52px;
+  right: 60px;
+}
+
+.callback__right-top p {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 122%;
+  color: #000;
+  margin-left: 30px;
+
+}
+
+.callback__right-top p span {
+  font-weight: 700;
+}
+
+.callback__persen p {
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 119%;
+  text-align: end;
+  color: #3a3a3a;
+}
+
+.callback__persen span {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 119%;
+  text-align: right;
+  color: #3a3a3a;
+}
+
+
+.callback__persen {
+  display: flex;
+  align-items: center;
+  justify-content: end
+}
 
 @media (max-width: 1180px) {
   .bg__big {
@@ -2323,15 +2533,23 @@ blue-900: #109DFF;
   }
 }
 
-@media (max-width: 1153px) {
-  .advan__paper {
-    display: none;
 
+@media (max-width: 1025px) {
+  .callback__titlal {
+    height: 100%;
   }
 
+  .callback__titlal h2 {
+    font-size: 30px;
+  }
+
+  .callback__right {
+
+    margin-top: 80px;
+  }
+
+
 }
-
-
 
 @media (max-width: 768px) {
 
